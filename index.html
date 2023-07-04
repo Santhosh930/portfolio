@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/png" href="./images/fevicon.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <fieldset>
+    <!-- <div class="home-section"> -->
+    <div class="navbar">
+      <div>
+        <h1 class="logo">PORT<span>FOLIO</span></span></h1>
+      </div>
+      <div class="menu-container">
+        <!-- <input type="checkbox" id="menu-toggle" /> -->
+        <!-- <label for="menu-toggle" class="menu-icon">&#9776;</label> -->
+        <nav class="menu">
+          <ul id="sidemenu">
+            <li><a href="#home-section" onclick="closemenu()">Home</a></li>
+            <li><a href="#about-section" onclick="closemenu()">About</a></li>
+            <li><a href="#skill-section" onclick="closemenu()">Skills</a></li>
+            <!-- <li><a href="#skill-section" onclick="closemenu()">Skills</a></li> -->
+            <li><a href="#project-section" onclick="closemenu()">Project</a></li>
+            <li><a href="#contact-section" onclick="closemenu()">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+        </nav>
+        <i class="fa-solid fa-bars menu-btn" onclick="openmenu()"></i>
+      </div>
+    </div>
+    </div>
+    <div id="home-section">
+      <div class="home-content">
+
+        <h1> Hi, I'm <span>Santhosh</span> <br>From Chennai</h1>
+        <p>Full stack developer</p>
+      </div>
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/santhosh-v-b99880214/" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/its._.me_santhosh/" target="_blank" class="insta">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Santhosh930" target="_blank" class="git">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Santhos84608698" target="_blank" class="twiter">
+
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="./images/santhosh.pdf" class="download-link"><button class="download-button">Resume<i
+            class="fa-solid fa-download"></i></button></a>
+    </div>
+    <!-- </div> -->
+
+    <!--------------about-------------->
+
+    <div id="about-section">
+      <h1 class="sec-heading">About Me</h1>
+      <div class="sec2-row">
+        <div class="about-content">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Santhosh, I have completed my batchelors degree in Computer Application
+            with 81%
+            and also I have completed java full stack developer course
+            and looking for the entry level position as a software Engineer where </p>
+          <div id="qualification">
+            <div class="tab-title">
+              <p class="tab-links active-link " onclick="opentab('education',event)">Education</p>
+              <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+              <!-- <p class="tab-links" onclick="opentab('educ',event)">Experience</p> -->
+            </div>
+            <div class="tab-contents active-tab " id="education">
+              <ul>
+                <li><span>[2023]</span><br>Currently pursuing my MBA at Madras University.</li>
+                <li><span>[2022 - 2023]</span><br>Completed JAVA full stack developer training at Qspider.</li>
+                <li><span>[2018 - 2021]</span><br>BCA graduate from SRM University.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <!-- <li><span>[2023]</span><br>Currently pursuing my MBA at Madras University.</li> -->
+                <li><span>[2021 - 2022]</span><br>
+                  <p>I worked at Avon Global Solutions as a Junior Processing Officer in the payment processing unit. My
+                    main responsibilities included handling Citibank cheques, ensuring accuracy, and processing them in
+                    compliance with banking regulations.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img class="sec2-image" src="./images/profile2.jpg" alt="my_picture">
+      </div>
+    </div>
+
+    <!--------------skill-------------->
+
+    <div id="skill-section">
+      <h1 class="sec-heading">SKILLS</h1>
+      <div class="skill_article">
+
+        <div class="skills-container">
+
+          <ul class="skills-list">
+            <li>
+              <div class="skill-icon-percentage">
+                <span class="skill-name"> <i class="fab fa-html5 skill-icon"></i> HTML</span> <span
+                  class="percentage">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress percentage-html"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-icon-percentage">
+                <span class="skill-name"> <i class="fab fa-css3-alt skill-icon"></i> CSS</span> <span
+                  class="percentage">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress percentage-css"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-icon-percentage">
+                <span class="skill-name"> <i class="fas fa-database skill-icon"></i> SQL</span> <span
+                  class="percentage">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress percentage-sql"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-icon-percentage">
+                <span class="skill-name"> <i style="visibility: hidden;" class="fab fa-java skill-icon"></i>
+                  <img class="java-png skill-icon" src="./images/javacup.png" alt="java">
+                  Java</span> <span class="percentage">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress percentage-java"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-icon-percentage">
+                <span class="skill-name"> <i class="fas fa-database skill-icon"></i> Hibernate</span> <span
+                  class="percentage">70%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress percentage-hibernate"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-icon-percentage">
+                <span class="skill-name"> <i style="visibility: hidden;" class="fab fa-java skill-icon"></i>
+                  <img class="java-png skill-icon" src="./images/javacup.png" alt="java">
+                  Servlet</span> <span class="percentage">60%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress percentage-servlet"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img src="./images/qsp certificate.jpg" alt="Image" class="certificate-image">
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------project--------------------------------- -->
+    <div id="project-section">
+      <h1 class="sec-heading">PROJECT</h1>
+      <div class="project">
+        <div class="about-project">
+          <h2>License Generator</h2>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is an online license generator. I have created a web-based application
+            using HTML and CSS for the frontend. For the backend, I have used MySQL as the database and Java as the
+            programming language. To connect the frontend and backend, I utilized JDBC and integrated Hibernate (an ORM
+            framework). Additionally, I established the connection between the frontend and backend using Servlet. <br>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The application requires new users to sign in first. Once signed in, they
+            can log in using their email ID and password. After logging in, users can update their details, view their
+            license, and permanently delete their records from the database.
+          </p>
+        </div>
+        <div class="demo-video">
+          <video width="640" height="400" controls autoplay loop>
+            <source src="./images/application1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------contact-------------------->
+
+
+    <div id="contact-section">
+      <form onsubmit="sendEmail(); reset(); return false;">
+
+        <h1 class="sec-heading">CONTACT</h1>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your E-mail" required>
+        <input type="text" id="phnumber" placeholder="Phone Number" required maxlength="10" minlength="10">
+        <textarea name="message" placeholder="How can I help You?" id="message" cols="26" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <footer>
+      <div id="copy-right">
+        <p>&copy; 2023 My Portfolio. All rights reserved.&nbsp; <i class="fas fa-heart red-heart"></i></p>
+      </div>
+    </footer>
+
+  </fieldset>
+  <script>
+    function opentab(tabname, event) {
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var menu = document.querySelector(".menu");
+
+    function openmenu() {
+      menu.style.right = "0";
+    }
+
+    function closemenu() {
+      menu.style.right = "-200px";
+    }
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var contact = document.getElementById("phnumber").value;
+      var text = document.getElementById("message").value;
+      // console.log(body);
+      Email.send({
+        SecureToken: "08e171ba-4bd9-4ffa-9a85-8b793f8961c4",
+        // Host: "smtp.elasticemail.com",
+        // Username: "ra1831241040045@gmail.com",
+        // Password: "9557114FB7DD43586837D139E2AC9800CB2C",
+        To: 'ra1831241040045@gmail.com',
+        From: "ra1831241040045@gmail.com",
+        Subject: "Contact Request from " + name + " via Portfolio: Seeking Connection",
+        Body: "Name : " + name + "<br> Email : " + email + "<br> Phone No. : " + contact + "<br> Message : " + text
+      }).then(
+        message => alert("Thank you " + name + " for contact me I will reach you soon")
+      );
+    }
+  </script>
+
+</body>
+
+</html>

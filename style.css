@@ -1,0 +1,1034 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'poppins', sans-serif;
+  /* transition: 1s; */
+}
+
+body {
+  background: #cfc8c8;
+  color: #fff;
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+
+}
+
+.sec-heading {
+  color: #000;
+  /* font-weight: 600; */
+  /* text-decoration: underline; */
+}
+
+.navbar {
+  background-color: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 8vh;
+  z-index: 1;
+  
+
+}
+
+#home-section {
+  padding-top: 12vh;
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
+  /* background: #586bc0;  ------------------------ */
+  background-image: url(./images/backgroundimg1.jpg);
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.logo,
+.suffix-logo {
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.logo span {
+  color: #e5710b;
+  padding: 2px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 2.5rem;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* transition: 5.2s; */
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.menu ul li a:hover {
+  color: #e5710b;
+}
+
+/* .menu .fa-solid {
+  display: none;
+} */
+
+.menu-btn {
+  display: none;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.menu-container .fa-solid {
+  display: none;
+}
+
+
+.home-content {
+  line-height: 6vw;
+  text-align: left;
+  margin-left: 20vw;
+  padding-top: 20vh;
+  font-size: 2vw;
+  margin-bottom: 3vw;
+
+}
+
+.home-content span {
+  color: #ff004f;
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #030303;
+  text-decoration: none;
+  margin: 0px 5px 0px 0;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons .insta:hover {
+  color: #fff;
+  /* background-color: #d82545; */
+  background: linear-gradient(385deg, #ffae3c, #c70e77);
+  /* Update with your desired hover color */
+}
+
+.social-icons .linkedin:hover {
+  color: #fff;
+  background-color: #084799;
+  /* Update with your desired hover color */
+}
+
+.social-icons .twiter:hover {
+  color: #fff;
+  background-color: #1180da;
+  /* Update with your desired hover color */
+}
+
+.social-icons .git:hover {
+  color: #fff;
+  background-color: #181717;
+  /* Update with your desired hover color */
+}
+
+.social-icons i {
+  font-size: 20px;
+}
+
+.download-button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  /* Centers the button horizontally */
+  padding: 10px 20px;
+  background-color: #1d89fd;
+  color: #fff;
+  /* border:2px solid #007bff; */
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+.download-link {
+  display: contents;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: #2375f2;
+  /* color: #272525; */
+
+}
+
+.download-button:hover .fa-download {
+  color: black;
+}
+
+.fa-download {
+  margin-left: 5px;
+  /* background-color: #000; */
+}
+
+/* ----------------------------about---------------------------------- */
+#about-section {
+  height: 115vh;
+  padding-top: 12vh;
+  /* display: flex; */
+  background-color: #000;
+
+}
+
+.sec2-row {
+  padding: 2vh 0vw 0vh 0;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: wrap;
+}
+
+.sec2-image {
+  height: 87vh;
+  width: 32vw;
+  margin: 0vh 3vw 0 3vw;
+  /* float: left; */
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  transition: 1.5s;
+}
+.sec2-image:hover {
+  
+  transform: rotateY(360deg);
+  transition: 1.5s;
+
+}
+
+#about-section .sec-heading {
+  font-size: 3rem;
+  margin: 0 0 2vh 0;
+  /* color: #fff; */
+  color: #e5710b;
+  text-align: center;
+}
+.about-content{
+  /* text-align: center; */
+  padding-left: 2vw;
+}
+.about-content p {
+  color: #978f8f;
+  text-align: justify;
+  margin-top: 5vh;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+#experience p{
+  color: #fff;
+}
+
+.tab-title {
+  /* text-align: center; */
+  margin: 5vh 0 3vh 0;
+  /* text-decoration: underline; */
+  /* font-size: 2.8rem; */
+  color: #958e8e;
+  display: flex;
+
+}
+
+.tab-links {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s;
+}
+
+
+.tab-links.active-link::after {
+  width: 60%;
+
+}
+
+.tab-contents {
+  display: none;
+  line-height: 5vh;
+
+}
+
+.tab-contents.active-tab {
+  display: block;
+
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 2vh 0;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.tab-contents ul li span {
+  color: #fd0c58;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+
+/* -------------------------------skill------------------------------- */
+
+#skill-section {
+  width: 100%;
+  height: 135vh;
+  padding-top: 12vh;
+  /* background-color: #1ae50b; ------------------*/
+}
+
+#skill-section h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 5vh;
+}
+
+.skill_article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills-container {
+  width: 50vw;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.skills-list li {
+  margin-bottom: 4.5vh;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 0.2rem;
+  box-shadow: 3px 3px 8px rgb(63, 62, 62);
+}
+
+.progress {
+  height: 0.6rem;
+  background-color: #007bff;
+  border-radius: 5px;
+  
+  /* transition: 5s; */
+}
+
+.progress.percentage-html {
+  width: 90%;
+}
+
+.progress.percentage-css {
+  width: 80%;
+}
+
+.progress.percentage-java {
+  width: 90%;
+}
+
+.progress.percentage-hibernate {
+  width: 75%;
+}
+
+.progress.percentage-sql {
+  width: 85%;
+}
+
+.progress.percentage-servlet {
+  width: 60%;
+}
+
+.fa-html5 {
+  color: red;
+}
+
+.fa-css3-alt {
+  color: rgb(232, 232, 29);
+}
+
+.fa-database {
+  color: #ad6cf8;
+}
+
+.skill-icon-percentage {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000;
+}
+
+.skill-icon {
+  padding-right: 10px;
+  font-size: 3rem;
+  padding-bottom: 0.5vh;
+}
+
+.java-png {
+  height: 4.2rem;
+  margin-top: -15px;
+  margin-left: -5px;
+  padding-bottom: 0px;
+  position: absolute;
+}
+
+.skill-name {
+  display: flex;
+}
+
+#skill-section.image-container {
+  width: 50em;
+  text-align: center;
+  height: 100vh;
+}
+
+.certificate-image {
+  max-width: 100%;
+  height: 60vh;
+  /* margin-top: -10px; */
+  /* display: none; */
+  transition: .5s;
+}
+.certificate-image:hover{
+  transform: scale(1.1);
+}
+/* ------------------------------PROJECT------------------------------------ */
+
+#project-section {
+  height: 100vh;
+  /* background: #ffae3c; */
+  padding-top: 8vh;
+  background: #000;
+}
+
+#project-section h1 {
+  text-align: center;
+  padding: 4vh 0 5vh 0;
+  font-size: 3rem;
+  /* color: #fff */
+  color: #e5710b;
+
+}
+
+#project-section h2 {
+  text-align: center;
+  padding: 1vh 0 4vh 0;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: #c0bbbb;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 3vh;
+}
+
+.about-project p {
+  text-align: justify;
+  padding-right: 2vw;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  width: 45vw;
+  color: #aaa8a8;
+}
+
+.demo-video {
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+  padding: 5px;
+
+}
+
+
+/* -----------------------------CONTATC---------------------------- */
+/* #contact-section { */
+/* width: 100%; */
+/* height: 115vh; */
+/* padding-top: 12vh; */
+
+/* } */
+
+#contact-section {
+  height: 90vh;
+  width: 100%;
+  /* box-sizing: border-box; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #e50bb6; */
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2vw 4vw 0;
+  margin: -40px 0 0 20p;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 6px 20px rgb(73, 72, 72);
+}
+
+form h1 {
+  color: #000;
+  padding: 1vh 0 3vh;
+  font-size: 1.5rem;
+  font-weight: 600px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  margin: 1.3vh auto;
+  padding: 1.5vh;
+  outline: none;
+  font-size: 1rem;
+  width: 35vw;
+  border: none;
+  background: #f1f0f0;
+  color: #000;
+  align-items: center;
+}
+
+#contact-section input::placeholder,
+textarea::placeholder {
+  color: rgb(130, 129, 129);
+}
+
+#contact-section input:focus,
+textarea:focus {
+  border: 1.5px solid #f9125b;
+}
+
+#contact-section button {
+  width: 10vw;
+  cursor: pointer;
+  padding: 8px;
+  margin: 2.5vh auto 5vh;
+  border: none;
+  background: #fb4f86;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1rem;
+
+}
+
+button:hover {
+  background: #f9125b;
+  transition: 0.5s;
+}
+
+/* ---------------------footer------------------------ */
+footer {
+  background-color: #000;
+  color: #a5a0a0;
+}
+
+#copy-right p {
+  text-align: center;
+  padding: 20px;
+}
+
+#copy-right .red-heart {
+  color: #f9125b;
+}
+
+/* ------------- mobail screen landscape ---------- */
+/* ------------------------home------------------------- */
+@media only screen and (max-width: 850px) {
+
+  .navbar {
+    height: 12vh;
+  }
+
+  #home-section {
+    height: 110vh;
+  }
+
+  .logo,
+  .suffix-logo {
+
+    font-size: 1.7rem;
+  }
+
+  .menu-container .fa-solid {
+    display: none;
+  }
+
+  .menu ul li {
+    margin-right: 1.3rem;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    /* transition: 5.2s; */
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s;
+  }
+
+  .home-content {
+    margin-left: 15vw;
+    padding-top: 10vh;
+    margin-bottom: 2vw;
+
+  }
+
+  /* ---------------------------landscape about--------------------------------- */
+
+  #about-section {
+    height: 140vh;
+    /* display: flex; */
+    /* background-color: #000; ---------------- */
+
+  }
+
+  .sec2-image {
+    height: 103vh;
+    width: 40vw;
+    margin: 0vh 2vw 0 2vw;
+    float: left;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+    margin: 0vh 0 1.5vh 0;
+    /* color: #1ae50b; */
+  }
+
+  .about-content p {
+
+    text-align: justify;
+
+    font-size: 1rem;
+    line-height: 1.6rem;
+
+  }
+
+  p.tab-links {
+    font-size: 1.3rem;
+  }
+
+  .tab-contents ul li {
+    margin: 3vh 0;
+    line-height: 5.3vh;
+    font-size: 1rem;
+  }
+
+  .tab-contents ul li span {
+    font-size: 0.9rem;
+    line-height: 5vh;
+  }
+
+  /* -----------------------landscape skill------------------------- */
+  #skill-section {
+    height: 150vh;
+  }
+
+  #skill-section h1 {
+    font-size: 2rem;
+    margin: 0vh 0 5vh 0;
+  }
+
+  .skill-icon-percentage {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+    padding-bottom: 1.5vh;
+  }
+
+  .java-png {
+    height: 3.3rem;
+
+  }
+  .certificate-image {
+    height: 60vh;
+ 
+  }
+
+  /* ----------------------- landscape project------------------------------ */
+
+  #project-section {
+    height: 120vh;
+  }
+
+  #project-section h1 {
+    font-size: 2rem;
+    margin: 0vh 0 vh 0;
+  }
+
+  #project-section h2 {
+    /* text-align: center; */
+    padding: 1vh 0 4vh 0;
+    font-size: 1.5rem;
+  }
+
+  .about-project p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+
+  .demo-video {
+    padding-top: 10vh;
+  }
+
+  /* -------------------------------Landscape contact------------------------------ */
+  #contact-section {
+    height: 120vh;
+  }
+
+  form {
+    width: 55%;
+    /* padding-bottom: 10px; */
+  }
+
+  form input,
+  form textarea {
+    padding: 1.5vh;
+    width: 40vw;
+  }
+
+  #contact-section button {
+    width: 15vw;
+  }
+
+  footer {
+    /* margin-top: 20px; */
+    height: 16vh;
+  }
+}
+
+/* ------------- mobail screen potrat ---------- */
+
+/* -------------------potrat home------------------------ */
+@media only screen and (max-width: 500px) {
+  .navbar {
+    height: 8vh;
+  }
+
+  .menu {
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    right: -200px;
+    top: 0;
+    background: #958e8e;
+    transition: all 0.5s ease;
+    padding-top: 30px;
+  }
+
+  .menu-container .fa-solid {
+    display: block;
+  }
+
+  .menu .fa-solid {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* z-index: -999; */
+  }
+
+  .menu ul {
+    display: inline;
+    margin-top: 2vh;
+    margin-left: 30vw;
+    font-size: 1.2rem;
+
+  }
+
+  .menu ul li {
+    margin: 7vh 17vw;
+    text-align: left;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    /* z-index: 999; */
+    font-size: 1.5rem;
+    margin-right: 5vw;
+
+  }
+
+  #home-section {
+    height: 100vh;
+  }
+
+  .home-content {
+    line-height: 7vh;
+    margin: 15vh 0vw 8vh 5vw;
+    font-size: 2.5vh;
+    /* margin-bottom: 20px; */
+  }
+  #home-section {
+    padding-top: 12vh;
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    /* background: #586bc0;  ------------------------ */
+    background-image: url(./images/backgroundimglandscape1.jpg);
+    /* background-position: center; */
+    background-size: cover;
+  }
+
+  /* -------------------potrat about------------------------ */
+
+  #about-section {
+    height: 142vh;
+    /* display: flex; */
+
+
+  }
+
+  .sec2-row {
+    /* padding: 4vh 0vw 0vh 0.1vw; */
+    /* width: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #qualification{
+    height: 35vh;
+  }
+
+  .sec2-image {
+    /* text-align: center; */
+    /* margin: 0 0 0 6vw; */
+    height: 60vh;
+    width: 80vw;
+    align-items: center;
+    /* margin-bottom: 5vh; */
+    /* padding: 4vh 3vw 0vh 5vw; */
+
+  }
+
+  .about-content {
+    margin-left: 5px;
+    /* width: 70vw; */
+  }
+
+#about-section .sec-heading {
+    font-size: 2.5rem;
+    margin-top: -2vh;
+    /* color: #e5710b; */
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    /* margin-bottom: -10px; */
+    margin-top: -20px;
+    padding-right: 12px;
+    /* width: 40vw; */
+
+  }
+
+  p.tab-links {
+    font-size: 1.3rem;
+  }
+
+  .tab-contents ul li {
+    line-height: 3vh;
+  }
+  #experience ul li p{
+    margin-top: 1vh;
+    line-height:4vh;
+    color: #fff;
+  }
+
+  .tab-contents ul li span {
+    line-height: 2vh;
+  }
+
+  /* --------------skill sec-------------- */
+  .skill_article {
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
+  #skill-section {
+    height: 135vh;
+    padding: 9vh 2vw 0 2vw;
+  }
+
+  #skill-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+  }
+
+  .skills-container {
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  ul.skills-list li {
+    margin-bottom: 2.8vh;
+  }
+
+  .skill-icon-percentage {
+    margin-bottom: -5px;
+  }
+
+  .certificate-image {
+    height: 40vh;
+
+  }
+
+  /* ------------------------------potrat project------------------------------ */
+
+  #project-section {
+    height: 110vh;
+    padding-top: 5vh;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .about-project {
+    width: 88vw;
+  }
+
+  .about-project p {
+    /* text-align: justify; */
+    padding-right: 1vw;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 90vw;
+    margin-bottom: -50px;
+  }
+
+  #project-section h1 {
+    padding: 4vh 0 0vh 0;
+    font-size: 2rem;
+  }
+
+  #project-section h2 {
+    /* text-align: center; */
+    padding: 0vh 0 2vh 0;
+    font-size: 1.5rem;
+  }
+
+
+
+  /* ------------------------potrat contact------------------------ */
+  #contact-section {
+    height: 80vh;
+  }
+
+  form {
+    width: 95%;
+    margin-top: -8vh;
+  }
+
+  form input,
+  form textarea {
+    padding: 1.5vh;
+    width: 80vw;
+  }
+
+  #contact-section button {
+    width: 25vw;
+  }
+
+  /* ---------------------------------footer----------------------- */
+  footer {
+    height: 8vh;
+  }
+
+  #copy-right p {
+    text-align: center;
+    padding: 20px;
+  }
+
+
+
+}
