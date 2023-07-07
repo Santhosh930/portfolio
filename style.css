@@ -265,18 +265,24 @@ body {
 .about-content p {
   color: #978f8f;
   text-align: justify;
-  margin-top: 5vh;
+  margin-top: 1vh;
   font-size: 1.3rem;
   line-height: 2.1rem;
 }
-
+.about-me{
+  /* margin-bottom: 4vh; */
+}
+#qualification{
+  height: 50vh;
+}
 #experience p {
   color: #fff;
+  
 }
 
 .tab-title {
   /* text-align: center; */
-  margin: 5vh 0 3vh 0;
+  margin: 2vh 0 3vh 0;
   /* text-decoration: underline; */
   /* font-size: 2.8rem; */
   color: #958e8e;
@@ -498,7 +504,7 @@ ul.skills-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 3vh;
+  padding: 2vh 4vh;
 }
 
 .about-project p {
@@ -506,7 +512,7 @@ ul.skills-list li {
   padding-right: 2vw;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  width: 45vw;
+  width: 50vw;
   color: #aaa8a8;
 }
 
@@ -668,13 +674,13 @@ footer {
   .sec2-image {
     height: 103vh;
     width: 40vw;
-    margin: 0vh 2vw 0 2vw;
+    margin: 10vh 2vw 0 2vw;
     float: left;
     /* border: 2px solid red; */
     border-radius: 10px;
   }
 
-  .about-content h1 {
+  .about-content {
     font-size: 2rem;
     margin: 0vh 0 1.5vh 0;
     /* color: #1ae50b; */
@@ -745,7 +751,7 @@ footer {
 
   #project-section h1 {
     font-size: 2rem;
-    margin: 0vh 0 vh 0;
+    /* margin: 0vh 0 vh 0; */
   }
 
   #project-section h2 {
@@ -758,6 +764,8 @@ footer {
     text-align: justify;
     font-size: 1rem;
     line-height: 1.1rem;
+    margin-left: -10px;
+    
   }
 
   .demo-video {
@@ -888,7 +896,7 @@ footer {
   }
 
   #qualification {
-    height: 35vh;
+    height: 22vh;
   }
 
   .sec2-image {
@@ -911,6 +919,9 @@ footer {
     font-size: 2.5rem;
     margin-top: -2vh;
     /* color: #e5710b; */
+  }
+  .about-me{
+    margin-bottom: 5vh;
   }
 
   .about-content p {
